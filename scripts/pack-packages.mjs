@@ -13,7 +13,7 @@ Options:
   --out <dir>            Output directory; .artifacts/ is ignored by Git
   --force                Replace an existing output directory
   --offline-model-data   Build with already-hydrated model data
-  --skip-build           Pack existing build output without rebuilding
+  --skip-build           Pack source-unbound diagnostics (not adoptable/publishable)
   --help                 Show this help
 `);
 }

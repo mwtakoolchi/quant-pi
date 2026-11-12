@@ -1,0 +1,9 @@
+Quant Pi is a customized fork of Pi (https://github.com/earendil-works/pi).
+The Quant fork is maintained at https://github.com/mwtakoolchi/quant-pi.
+
+Pi's original copyright and MIT permission notice are preserved verbatim in
+the accompanying LICENSE file. The fork adds Quant Agent identity and
+integration packaging. It does not change the upstream license terms.
+
+This notice covers Pi and the Quant fork. Other dependencies retain their own
+licenses; this notice does not replace their copyright or permission notices.
