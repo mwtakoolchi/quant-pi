@@ -1,11 +1,13 @@
 # Quant Pi
 
 This is the Pi fork for [Quant Agent](https://github.com/mwtakoolchi/quant_agent).
-The `quant/v1.5.2` integration branch merges upstream tag
-`v1.5.2` (`b4afdddf44e059c67ccf5097e5317d913521b470`) into the previous
-`quant/v1.5.1` branch. Upstream's MIT license
-and attribution remain in place. Package names stay unchanged so the SDK
-dependency graph can be consumed as one coherent artifact set.
+`main` mirrors upstream. `quant/next` combines the Quant customizations with
+upstream commit `5a14e69c067d40dfbff4f2fff7d3b34c897e2dc9` for testing
+between releases. `quant/v1.5.2` is the release-based branch for upstream tag
+`v1.5.2` (`b4afdddf44e059c67ccf5097e5317d913521b470`). Quant Agent selects
+its installed SDK by the commit and artifact hashes in `pi-fork.lock.json`.
+Upstream's MIT license and attribution remain in place. The SDK packages keep
+their upstream names so they can be consumed together.
 
 The fork owns terminal/session SDK customizations. Quant Agent owns account
 selection, research tools, local service adapters and the `qagent` launcher.
@@ -22,8 +24,7 @@ host shell execution, telemetry, cache warming and automatic provider retries.
 ## Upstream updates
 
 Keep `origin` pointing to `mwtakoolchi/quant-pi` and `upstream` pointing to
-`earendil-works/pi`. Pin a released upstream tag; `main` can contain unreleased
-changes. Do not update an installed product directly from a moving branch.
+`earendil-works/pi`. For a product release, pin a released upstream tag.
 
 For a new release, fetch upstream tags and create a candidate branch from the
 current Quant integration branch, then merge the selected release tag. Resolve
