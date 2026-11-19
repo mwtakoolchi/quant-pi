@@ -1,8 +1,9 @@
 # Quant Pi
 
 This is the Pi fork for [Quant Agent](https://github.com/mwtakoolchi/quant_agent).
-The initial integration branch is `quant/v1.5.1`, based on upstream tag
-`v1.5.1` (`dd30101cfc5b0609411dd80b6f93adbc14db14cf`). Upstream's MIT license
+The `quant/v1.5.2` integration branch merges upstream tag
+`v1.5.2` (`b4afdddf44e059c67ccf5097e5317d913521b470`) into the previous
+`quant/v1.5.1` branch. Upstream's MIT license
 and attribution remain in place. Package names stay unchanged so the SDK
 dependency graph can be consumed as one coherent artifact set.
 
@@ -14,8 +15,9 @@ There is no separate exchange client or order path in this fork.
 
 The first customization sets the product name, terminal title and default state
 namespace. Quant Agent supplies its own explicit tools, model transport and
-private session directory through the SDK. It disables ambient extensions,
-shell tools, telemetry, cache warming and automatic provider retries.
+private session directory through the SDK. Project tools run inside the
+product's workspace sandbox. The product disables ambient extensions,
+host shell execution, telemetry, cache warming and automatic provider retries.
 
 ## Upstream updates
 
